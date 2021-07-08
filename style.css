@@ -32,9 +32,9 @@ body {
 }
 
 nav {
-    position: sticky;
-    top: 0; /* For sticky nav */
-    z-index: 99;
+    /* position: sticky;
+    top: 0; 
+    z-index: 99; */
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
@@ -61,7 +61,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-.burger {
+/* .burger {
     cursor: pointer;
     display: none;
 }
@@ -77,7 +77,7 @@ nav ul li a {
 .burger .line3 {
     width: 15px; 
     margin-left: 15px;
-}
+} */
 
 .intro {
     display: flex;
@@ -102,7 +102,7 @@ nav ul li a {
     color: var(--light-blue);
 }
 
-.action, .wrapper button, .blog-section button {
+.action, .wrapper button, .blog-section button, .home-content button {
     letter-spacing: 0.01rem;
     font-size: 1rem;
     padding: 0.5rem;
@@ -128,7 +128,7 @@ nav ul li a {
     color: var(--light-bg);
 }
 
-.about-section .title, .project-section .title, .contact-section .title, .blog-section .title {
+.about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
     text-align: center;
     font-size: 3.5rem;
     padding: 1rem;
@@ -159,27 +159,36 @@ nav ul li a {
     margin: 2rem;
 }
 
-/* .skill-section .skill, .skill-section .wrapper {
+.skill-section {
+    margin: 2rem 0;
+}
+
+.skill-section ul.skill, .skill-section .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
 }
 
 .skill-section .wrapper {
     flex-direction: column;
-    margin: 2rem;
 }
 
-.skill-section i, .skill-section img {
-    font-size: 85px;
-    color: var(--light-blue);
-} */
+.skill-section i {
+    font-size: 80px;
+    padding: 1rem;
+}
+
+.skill-section .name {
+    color: var(--dark-bg);
+}
 
 .project-section {
     padding: 0 4rem;
 }
 
-.project-section .title, .blog-section .title {
+.skill-section .title, .project-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
     color: var(--blue);
 }
 
@@ -209,7 +218,7 @@ nav ul li a {
     color: var(--blue);
 }
 
-.about .text, .wrapper .details, .blog-section .content {
+.about .text, .wrapper .details, .blog-section .content, .home-content {
     font-size: 1rem;
     text-align: justify;
     color: var(--dark-bg);
@@ -228,13 +237,13 @@ nav ul li a {
 }
 
 .blog-section {
-    margin: 2rem 7rem 7rem;
+    margin: 0rem 9rem;
 }
 
 .blog-section .blog {
     width: 100%;
     padding: 0;
-    margin-top: 1rem;
+    margin: 2rem 0;
     box-shadow: var(--box-shadow);
 }
 
@@ -261,17 +270,28 @@ nav ul li a {
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
+.project-home, .blog-home {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 50%;
+    border-radius: var(--border-radius);
+    border-right: 4px solid var(--blue);
+    border-left: 2px solid var(--blue);
+    border-top: 2px solid var(--blue);    
+    border-bottom: 4px solid var(--blue);    
+}
+
 .contact-section {
     margin-bottom: 0;
 }
 
-.about-section:before , .project-section:before, .blog-section:before, .contact-section:before{ 
+/* .about-section:before , .project-section:before, .blog-section:before, .contact-section:before{ 
     content: "";
     background: var(--light-bg);
     display: block;
     margin-top: -60px;
     padding-top: 60px;
-}
+} */
 
 .contact-section .title {
     font-size: 3rem;
@@ -300,6 +320,8 @@ nav ul li a {
     color: var(--light-bg);
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 1200px) { /* fully Done */
 
     .intro {
@@ -311,7 +333,7 @@ nav ul li a {
     .designation {
         font-size: 1.3rem;
     }
-    .action, .wrapper button, .blog-section button {
+    .action, .wrapper button, .blog-section button, .home-content button {
         font-size: 0.8rem;
     }
     .intro img{
@@ -324,7 +346,7 @@ nav ul li a {
         width: 55vw;
     }   
 
-    .about-section .title, .project-section .title, .contact-section .title, .blog-section .title {
+    .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
         font-size: 3rem;
         padding: 0.8rem;
     }
@@ -346,10 +368,14 @@ nav ul li a {
     }
     
     .blog-section {
-        margin: 3.5rem;
+        margin: 0 5rem;
     }
     .blog .name {
         font-size: 2.25rem;
+    }
+
+    .project-home, .blog-home {
+        width: 70%;
     }
 }
 
@@ -393,13 +419,27 @@ nav ul li a {
     .project-section .wrapper {
         width: 80%;
     }
+
+    .skill-section ul.skill, .skill-section .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0.75rem;
+    }
+    
+    .skill-section i {
+        font-size: 60px;
+        padding: 1rem;
+    }
+    
 }
 
 @media (max-width: 600px) {
     body.no-overflow {
         overflow-y: hidden;
     }
-    nav {
+    /* nav {
         flex-direction: column-reverse;
     }
     .nav-links {
@@ -415,11 +455,8 @@ nav ul li a {
         color: var(--blue);
         transform: translateY(-100vh);
         transition: all 0.7s ease;
-    }
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-    .nav-links.open {
+    } 
+        .nav-links.open {
         transform: translateY(0vh);
     }
     .burger {
@@ -428,8 +465,11 @@ nav ul li a {
         align-items: flex-end;
         width: 100%;
         height: 5vh;
+    } */
+    .nav-links a {
+        font-size: 0.9rem;
     }
-    .about-section .title, .project-section .title, .contact-section .title, .blog-section .title {
+    .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
         font-size: 2.5rem;
         padding: 0.6rem;
     }
@@ -439,7 +479,7 @@ nav ul li a {
     .hr hr{
         margin: 0 3rem;
     }
-    .about .text, .project .details, .blog .content {
+    .about .text, .project .details, .blog .content, .home-content {
         font-size: 0.9rem;
     }
     .project-section {
@@ -453,7 +493,10 @@ nav ul li a {
         margin: 0;
     }
     .blog-section {
-        margin: 2.5rem;
+        margin: 0 3.5rem;
+    }
+    .project-home, .blog-home {
+        width: 80%;
     }
     .contact i {
         margin: 1rem;
@@ -479,7 +522,7 @@ nav ul li a {
     .designation {
         font-size: 1rem;
     }
-    .action, .wrapper button, .blog-section button {
+    .action, .wrapper button, .blog-section button, .home-content button{
         font-size: 0.7rem;
         padding: 0.25rem 0.5rem;
         margin: 0.5rem 0;    
@@ -510,14 +553,13 @@ nav ul li a {
     }
 
     .blog-section {
-        margin: 1rem;
+        margin: 0 1rem;
     }
     .blog-section .blog {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0;
     }
     .contact-section .footer {
         font-size: 0.9rem;
