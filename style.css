@@ -1,19 +1,12 @@
 :root {
-    /* --light-bg: rgb(221, 221, 221); */
     --dark-bg: rgb(40, 40, 40);
-
-    --blue: #4c00ff; 
-    /* --blue-op: #4c00ff83;  */
-    /* --secondary-blue: #122f6e;  */
-    --light-blue: #5B86E5; 
-    /* --grey: #5f6572; */
-    /* --secondary-blue: #36d1dc;  */
     --light-bg: #dfe1e6; 
+    --blue: #4c00ff; 
+    --light-blue: #5B86E5; 
 
     --border-radius: 5px;
     --box-shadow: 5px 5px 20px 2px #b8b8b891;
 
-    /* --purple: #7400b8; */
     --poppins: 'Poppins', sans-serif;
     --sacramento: 'Sacramento', cursive;
 }
@@ -85,6 +78,10 @@ nav ul li a {
     margin: 5rem;
 }
 
+.project-intro, .blog-intro {
+    justify-content: center;
+}
+
 .intro .text {
     flex: 50%;
 }
@@ -94,6 +91,17 @@ nav ul li a {
     color: var(--blue);
     font-family: var(--sacramento);
     text-shadow: 2px 2px var(--light-blue);
+}
+
+.intro img{
+    float: right;
+    height: auto;
+    width: 40vw;
+    user-select: none;
+}
+
+.blog-intro img {
+    width: 30vw;
 }
 
 .designation {
@@ -113,13 +121,6 @@ nav ul li a {
     outline: none;
     border: none;
     cursor: pointer;
-}
-
-.intro img{
-    float: right;
-    height: auto;
-    width: 40vw;
-    user-select: none;
 }
 
 .about-section, .contact-section {
