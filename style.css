@@ -6,7 +6,9 @@
 
     --border-radius: 5px;
     --box-shadow: 5px 5px 20px 2px #b8b8b891;
-
+    
+    --yellow: #ffffff;
+        
     --poppins: 'Poppins', sans-serif;
     --sacramento: 'Sacramento', cursive;
 }
