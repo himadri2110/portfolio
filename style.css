@@ -48,6 +48,7 @@ h2 {
 code, pre {
     font-family: monospace;
     background-color: #b8b8b891;
+    color: var(--dark-bg);
     border-radius: var(--border-radius);
     padding: 0.25rem;
     overflow: auto;
