@@ -28,4 +28,4 @@ Personal Portfolio website
 
 ## Contact
 
-- Links to all my social media platforms
+- Links to all my social media accounts
