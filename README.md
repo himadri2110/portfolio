@@ -2,7 +2,7 @@
 
 Personal Portfolio website
 
-<img src="./img/portfolio.png">
+<a href="http://himadrishah.tech/"><img src="./img/portfolio.png"></a>
 
 ## Live
 
