@@ -120,7 +120,7 @@ nav ul li a {
     margin: 5rem;
 }
 
-.project-intro, .blog-intro {
+.project-intro, .blog-intro, .about-intro {
     justify-content: center;
 }
 
@@ -152,7 +152,7 @@ nav ul li a {
     color: var(--light-blue);
 }
 
-.action, .wrapper button, .blog-section button, .home-content button {
+.action, .about-section-home button, .wrapper button, .blog-section button, .home-content button {
     letter-spacing: 0.01rem;
     font-size: 1rem;
     padding: 0.5rem;
@@ -165,24 +165,33 @@ nav ul li a {
     cursor: pointer;
 }
 
-.about-section, .contact-section {
+.about-section-home button {
+    color: var(--blue);
+    background-color: var(--light-bg);
+}
+
+.about-section-home, .contact-section {
     margin: 3rem 0;
     background-image: linear-gradient(190deg, var(--light-blue), var(--blue));
     color: var(--light-bg);
 }
 
-.about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
+.about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title,.about-section-home .title, .project-section-home .title, .blog-section-home .title {
     text-align: center;
     font-size: 3.5rem;
     padding: 1rem;
     font-family: var(--sacramento);
 }
 
-.hr hr{
+.hr hr, .about-section hr{
     margin: 0 5rem;
     height: 0.01rem;
     border-width: 0;
     background-color: var(--light-bg);
+}
+
+.about-section hr {
+    background-color: var(--blue); 
 }
 
 .about {
@@ -231,7 +240,7 @@ nav ul li a {
     padding: 0 4rem;
 }
 
-.skill-section .title, .project-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
+.about-section .title, .skill-section .title, .project-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
     color: var(--blue);
 }
 
@@ -330,7 +339,7 @@ nav ul li a {
     margin: auto;
 }
 
-.blog-section .blog {
+.blog-section .blog, .about-section {
     padding: 0;
     margin: 2rem;
     box-shadow: var(--box-shadow);
@@ -340,6 +349,19 @@ nav ul li a {
     border-radius: var(--border-radius);
     border-bottom: 4px solid var(--blue);
     outline: none;
+}
+
+.about-section {
+    border-top: 2px solid var(--blue);
+}
+
+.about-section .text {
+    padding: 1rem;
+}
+
+.about-section p {
+    padding: 0.5rem;
+    text-align: justify; 
 }
 
 .blog-section .name {
@@ -445,7 +467,7 @@ nav ul li a {
         width: 55vw;
     }   
 
-    .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
+    .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .about-section-home .title, .project-section-home .title, .blog-section-home .title {
         font-size: 3rem;
         padding: 0.8rem;
     }
@@ -558,7 +580,7 @@ nav ul li a {
     .nav-links a {
         font-size: 0.9rem;
     }
-    .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .project-section-home .title, .blog-section-home .title {
+    .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .about-section-home .title, .project-section-home .title, .blog-section-home .title {
         font-size: 2.5rem;
         padding: 0.6rem;
     }
@@ -581,7 +603,7 @@ nav ul li a {
         font-size: 1.35rem;
     }
 
-    .blog-section .blog {
+    .blog-section .blog, .about-section {
         margin: 2rem 1rem;
     }
     .project-home, .blog-home {
