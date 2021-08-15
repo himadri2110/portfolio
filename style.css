@@ -135,12 +135,15 @@ nav ul li a {
     text-shadow: 2px 2px var(--light-blue);
 }
 
-.intro img{
+.intro img {
     float: right;
     height: auto;
     width: 40vw;
-    user-select: none;
 }
+
+/* .about-intro img {
+    width: 30vw;
+} */
 
 .blog-intro img {
     width: 30vw;
@@ -316,7 +319,7 @@ nav ul li a {
     margin: 0 0.25rem 0 0;
 }
 
-.about .text, .wrapper .details, .blog-section .content, .home-content {
+.about .text, .about-section p, .wrapper .details, .blog-section .content, .home-content {
     font-size: 1rem;
     text-align: justify;
     color: var(--dark-bg);
@@ -361,7 +364,6 @@ nav ul li a {
 
 .about-section p {
     padding: 0.5rem;
-    text-align: justify; 
 }
 
 .blog-section .name {
@@ -454,10 +456,10 @@ nav ul li a {
     .designation {
         font-size: 1.3rem;
     }
-    .action, .wrapper button, .blog-section button, .home-content button {
+    .action, .about-section-home button, .wrapper button, .blog-section button, .home-content button {
         font-size: 0.8rem;
     }
-    .intro img{
+    .intro img {
         width: 50%;
     }   
 }
@@ -504,6 +506,10 @@ nav ul li a {
     .about .text {
         margin-top: 0;
     }
+    /* .about img {
+        width: 8rem;
+    }
+ */
 }
 
 @media (max-width: 768px) {
@@ -587,7 +593,7 @@ nav ul li a {
     .hr hr{
         margin: 0 3rem;
     }
-    .about .text, .project .details, .blog .content, .home-content {
+    .about .text,  .about-section p, .project .details, .blog .content, .home-content {
         font-size: 0.9rem;
     }
     .project-section {
@@ -617,7 +623,7 @@ nav ul li a {
 
 @media (max-width: 480px) {
     .nav-links a {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 
     .intro {
@@ -630,7 +636,7 @@ nav ul li a {
     .designation {
         font-size: 1rem;
     }
-    .action, .wrapper button, .blog-section button, .home-content button{
+    .action, .about-section-home button, .wrapper button, .blog-section button, .home-content button{
         padding: 0.25rem 0.5rem;
         margin: 0.5rem 0;    
     }
@@ -650,9 +656,6 @@ nav ul li a {
         margin: 0;
         margin-bottom: 1rem;
         font-size: 0.75rem;
-    }
-    .about img {
-        margin: 1rem;
     }
 
     .project-section .wrapper {
