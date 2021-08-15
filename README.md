@@ -1,6 +1,8 @@
 # portfolio
 
-Personal Portfolio website
+[neoG mark3] [neoG mark4] [neoG mark5]
+
+<p>Personal Portfolio website</p>
 
 <a href="http://himadrishah.tech/"><img src="./img/portfolio.png"></a>
 
