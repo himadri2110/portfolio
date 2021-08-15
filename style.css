@@ -577,9 +577,6 @@ nav ul li a {
         width: 100%;
         height: 5vh;
     } */
-    .nav-links a {
-        font-size: 0.9rem;
-    }
     .about-section .title, .skill-section .title, .project-section .title, .contact-section .title, .blog-section .title, .about-section-home .title, .project-section-home .title, .blog-section-home .title {
         font-size: 2.5rem;
         padding: 0.6rem;
@@ -620,7 +617,7 @@ nav ul li a {
 
 @media (max-width: 480px) {
     .nav-links a {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
     }
 
     .intro {
