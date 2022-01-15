@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="author" content="Himadri Shah">
-    <meta name="description" content="Personal Portfolio of Himadri Shah">
-    <meta name="keywords" content="Portfolio, Web Development">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="author" content="Himadri Shah" />
+    <meta name="description" content="Personal Portfolio of Himadri Shah" />
+    <meta name="keywords" content="Portfolio, Web Development" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Font Awesome Downloaded -->
-    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="all.min.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Projects | Himadri Shah</title>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <nav>
-        <ul class="nav-links">
-            <li><a onclick="window.location.href='index.html'">Home</a></li>
-            <li><a onclick="window.location.href='about.html'">About</a></li>
-            <li><a href="#" style="border-bottom: 2px solid var(--blue);">Projects</a></li>
-            <li><a onclick="window.location.href='blogs.html'">Blogs</a></li>
-            <!-- <li><a onclick="jumpToDiv('contact')">Contact</a></li> -->
-        </ul>
+      <ul class="nav-links">
+        <li><a onclick="window.location.href='index.html'">Home</a></li>
+        <li><a onclick="window.location.href='about.html'">About</a></li>
+        <li>
+          <a href="#" style="border-bottom: 2px solid var(--blue)">Projects</a>
+        </li>
+        <li><a onclick="window.location.href='blogs.html'">Blogs</a></li>
+        <!-- <li><a onclick="jumpToDiv('contact')">Contact</a></li> -->
+      </ul>
 
-        <!-- <div class="burger">
+      <!-- <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -41,323 +48,622 @@
     </nav>
 
     <div class="intro project-intro">
-        <img src="./img/undraw_project.svg" alt="Project">
+      <img src="./img/undraw_project.svg" alt="Project" />
     </div>
 
     <div class="project-section">
-        <div class="title">Checkout my projects...</div>
+      <div class="title">Checkout my projects...</div>
 
-        <div class="project">
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/stocks.png" alt="Stocks Project">
-                </div>
-    
-                <div class="project-text">
-                    <div class="name">Stocks Yay or Nay?</div>
-                    <small>July, 2021 &nbsp; <span class="mark">mark14</span></small>
+      <div class="project">
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/meme-generator.png" alt="Meme Generator" />
+          </div>
 
-                    <div class="details">A web app which takes the price of stocks while purchasing and current price along with the number of stocks and gives the percentage and absolute value of profit/loss earned.</div>
-                    <div class="button-div">
-                        <a href="https://markfourteen-stocks.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markFourteen" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
+          <div class="project-text">
+            <div class="name">Meme Generator</div>
+            <small>Jan, 2021 &nbsp; <span class="mark">React</span></small>
+
+            <div class="details">
+              A web app that lets you generate a random meme image, and add top
+              and bottom text to it. The meme images are generated using the
+              ImgFlip API.
             </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/palindrome.png" alt="Birthday Palindrome">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Palindrome Birthday</div>
-                    <small>July, 2021 &nbsp; <span class="mark">mark13</span></small>
-
-                    <div class="details">A web app which tells you if your birthdate is palindrome or not. If not, it returns the nearest palindrome date and the number of days by which you missed it.</div>
-                    <div class="button-div">
-                        <a href="https://markthirteen-palindromebday.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markThirteen" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
+            <div class="button-div">
+              <a
+                href="https://meme-generator-himadri.netlify.app/"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/react-meme-generator"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
             </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/triangles.png" alt="Triangles">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Learn Triangles</div>
-                    <small>July, 2021 &nbsp; <span class="mark">mark12</span></small>
-
-                    <div class="details">Small fun quizzes on triangles. It allows you to calculate area, hypotenuse, find third angle, and take a quick quiz to test your knowledge of triangles.</div>
-                    <div class="button-div">
-                        <a href="https://marktwelve-triangles.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/learn-triangles" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/lucky.png" alt="Lucky Birthday">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Lucky Birthday</div>
-                    <small>July, 2021 &nbsp; <span class="mark">mark11</span></small>
-
-                    <div class="details">A web app which which takes your birthdate and lucky number, performs calculations and tells if your birthdate is lucky or not.</div>
-                    <div class="button-div">
-                        <a href="https://markeleven-luckybday.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markEleven" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/cash-register.png" alt="Cash Register">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Cash Register</div>
-                    <small>July, 2021 &nbsp; <span class="mark">markTen</span></small>
-
-                    <div class="details">A web app which takes the bill amount and the cash paid as the input and gives the minimum number of notes of each denomination to be returned.</div>
-                    <div class="button-div">
-                        <a href="https://markten-cashregister.netlify.app/ " target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markTen" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/foodie.png" alt="Foodie">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Hey Foodie!</div>
-                    <small>July, 2021 &nbsp; <span class="mark">markNine</span></small>
-
-                    <div class="details">A web app which gives a list of food items and their ratings based on chosen cuisine. It is made with React.</div>
-                    <div class="button-div">
-                        <a href="https://marknine-food.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markNine" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/fruit.png" alt="Fruit Interpreter">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Know your Fruit!</div>
-                    <small>July, 2021 &nbsp; <span class="mark">markEight</span></small>
-
-                    <div class="details">A web app which returns the name of the fruit upon entering its emoji. It is made with React.</div>
-                    <div class="button-div">
-                        <a href="https://markeight-fruit.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markEight" target="_blank"><button  class="github">Source</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/yoda-speak.png" alt="Yoda Speak">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Yoda Speak</div>
-                    <small>July, 2021 &nbsp; <span class="mark">markSeven</span></small>
-
-                    <div class="details">A web app which converts English to Yoda speak using the Yodish API. </div>
-                    <div class="button-div">
-                        <a href="https://markseven-yoda-speak.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markSeven" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/minion-speak.png" alt="Minion Speak">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Minion Speak</div>
-                    <small>July, 2021 &nbsp; <span class="mark">markSix</span></small>
-
-                    <div class="details">A web app which converts English to Minion speak using the Minion Speak API. </div>
-                    <div class="button-div">
-                        <a href="https://marksix-minion-speak.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markSix" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/portfolio.png" alt="Portfolio">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Portfolio</div>
-                    <small>June, 2021 &nbsp; <span class="mark">markThree</span><span class="mark">markFour</span><span class="mark">markFive</span></small>
-
-                    <div class="details">Personal portfolio website which includes my projects, blogs and skills.</div>
-                    <div class="button-div">
-                        <a href="https://himadrishah.tech/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/portfolio" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/india-quiz.png" alt="India Quiz">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Know India?</div>
-                    <small>June, 2021 &nbsp; <span class="mark">markTwo</span></small>
-
-                    <div class="details">A JavaScript CLI app about India, made using readlineSync and CHALK dependencies.</div>
-                    <div class="button-div">
-                        <a href="https://replit.com/@himadri21/assignment-lesson-1?embed=1&output=1" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markTwo" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/me-quiz.png" alt="Me Quiz">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Know Me?</div>
-                    <small>June, 2021 &nbsp; <span class="mark">markOne</span></small>
-
-                    <div class="details">A JavaScript CLI app about me, made using readlineSync and CHALK dependencies.</div>
-                    <div class="button-div">
-                        <a href="https://replit.com/@himadri21/lesson-1?embed=1&output=1" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/neoG-markOne" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/movie-mania.png" alt="Movie Mania">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">MovieMania</div>
-                    <small>June, 2021 &nbsp; <span class="mark">Personal</span></small>
-
-                    <div class="details">A Movie App built using data from TMDb API. It can filter movies based on Categorie and Genres, search movies, give list of Trending Shows, watchList feature to save your favorite shows. </div>
-                    <div class="button-div">
-                        <a href="https://themoviemania.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/MovieMania" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/library.png" alt="Library">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Library</div>
-                    <small>June, 2021 &nbsp; <span class="mark">Personal</span></small>
-
-                    <div class="details">A web app that lets the user store their favourite books along with its details into a virtual library. Users can mark the book as read and remove it as well.</div>
-                    <div class="button-div">
-                        <a href="https://himadri-library.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/vanillaJS/tree/main/Library" target="_blank"><button class="github">Source</button></a>
-                    </div>     
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/calculator.png" alt="Calculator">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Calculator</div>
-                    <small>March, 2021 &nbsp; <span class="mark">Personal</span></small>
-
-                    <div class="details">A calculator web app that lets the user perform mathematical calculations such as addition, subtraction, multiplication and division.</div>
-                    <div class="button-div">
-                        <a href="https://himadri-calculator.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/vanillaJS/tree/main/Calculator" target="_blank"><button class="github">Source</button></a>
-                    </div>     
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/to-do-list.png" alt="To Do List">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">To Do List</div>
-                    <small>March, 2021 &nbsp; <span class="mark">Personal</span></small>
-
-                    <div class="details">A web app that allows the users to enter their To Do Tasks, mark the task as completed, remove task from list. User can also filter completed and pending tasks.</div>
-                    <div class="button-div">
-                        <a href="https://himadri-todo-list.netlify.app/" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/vanillaJS/tree/main/To%20Do%20List" target="_blank"><button class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="image">
-                    <img src="./img/banking-app.png" alt="Banking App">
-                </div>
-
-                <div class="project-text">
-                    <div class="name">Banking App</div>
-                    <small>Feb, 2021 &nbsp; <span class="mark">Internship</span></small>
-
-                    <div class="details">A Basic Banking system which allows the customers to carry out transactions and also view the transaction history with timestamp and amount transferred, along with the customer details.</div>
-                    <div class="button-div">
-                        <a href="https://himadrishah.000webhostapp.com/index.php" target="_blank"><button>Live<i class="fas fa-external-link-alt"></i></button></a>
-                        <a href="https://github.com/himadri2110/TSF-Bank" target="_blank"><button  class="github">Source</button></a>
-                    </div>    
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/manifest-neog.png" alt="Manifest neoG" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Manifest neoG</div>
+            <small>Jan, 2021 &nbsp; <span class="mark">React</span></small>
+
+            <div class="details">
+              A web app that helps you manifest the goal of completing the
+              neoGcamp’22 cohort by June 2022.
+            </div>
+            <div class="button-div">
+              <a href="https://manifest-neog.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/manifest-neoG"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/to-do-react.png" alt="To Do List" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">To Do List - React</div>
+            <small>Nov, 2021 &nbsp; <span class="mark">React</span></small>
+
+            <div class="details">
+              A React app that allows the users to enter their To Do Tasks, mark
+              the task as completed, remove task from list. User can also filter
+              completed and pending tasks.
+            </div>
+            <div class="button-div">
+              <a href="https://himadri-todo-react.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/react-todo-list"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/contact.png" alt="Contact Manager" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Contact Manager</div>
+            <small>Oct, 2021 &nbsp; <span class="mark">React</span></small>
+
+            <div class="details">
+              A web app to manage contacts. It allows the user to add and delete
+              contacts, and shows a list of contacts.
+            </div>
+            <div class="button-div">
+              <a href="https://himadri-contact-app.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/react-contact-app"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/stocks.png" alt="Stocks Project" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Stocks Yay or Nay?</div>
+            <small>July, 2021 &nbsp; <span class="mark">mark14</span></small>
+
+            <div class="details">
+              A web app which takes the price of stocks while purchasing and
+              current price along with the number of stocks and gives the
+              percentage and absolute value of profit/loss earned.
+            </div>
+            <div class="button-div">
+              <a href="https://markfourteen-stocks.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markFourteen"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/palindrome.png" alt="Birthday Palindrome" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Palindrome Birthday</div>
+            <small>July, 2021 &nbsp; <span class="mark">mark13</span></small>
+
+            <div class="details">
+              A web app which tells you if your birthdate is palindrome or not.
+              If not, it returns the nearest palindrome date and the number of
+              days by which you missed it.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://markthirteen-palindromebday.netlify.app/"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markThirteen"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/triangles.png" alt="Triangles" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Learn Triangles</div>
+            <small>July, 2021 &nbsp; <span class="mark">mark12</span></small>
+
+            <div class="details">
+              Small fun quizzes on triangles. It allows you to calculate area,
+              hypotenuse, find third angle, and take a quick quiz to test your
+              knowledge of triangles.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://marktwelve-triangles.netlify.app/"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/learn-triangles"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/lucky.png" alt="Lucky Birthday" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Lucky Birthday</div>
+            <small>July, 2021 &nbsp; <span class="mark">mark11</span></small>
+
+            <div class="details">
+              A web app which which takes your birthdate and lucky number,
+              performs calculations and tells if your birthdate is lucky or not.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://markeleven-luckybday.netlify.app/"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markEleven"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/cash-register.png" alt="Cash Register" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Cash Register</div>
+            <small>July, 2021 &nbsp; <span class="mark">markTen</span></small>
+
+            <div class="details">
+              A web app which takes the bill amount and the cash paid as the
+              input and gives the minimum number of notes of each denomination
+              to be returned.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://markten-cashregister.netlify.app/ "
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markTen"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/foodie.png" alt="Foodie" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Hey Foodie!</div>
+            <small>July, 2021 &nbsp; <span class="mark">markNine</span></small>
+
+            <div class="details">
+              A web app which gives a list of food items and their ratings based
+              on chosen cuisine. It is made with React.
+            </div>
+            <div class="button-div">
+              <a href="https://marknine-food.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markNine"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/fruit.png" alt="Fruit Interpreter" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Know your Fruit!</div>
+            <small>July, 2021 &nbsp; <span class="mark">markEight</span></small>
+
+            <div class="details">
+              A web app which returns the name of the fruit upon entering its
+              emoji. It is made with React.
+            </div>
+            <div class="button-div">
+              <a href="https://markeight-fruit.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markEight"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/yoda-speak.png" alt="Yoda Speak" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Yoda Speak</div>
+            <small>July, 2021 &nbsp; <span class="mark">markSeven</span></small>
+
+            <div class="details">
+              A web app which converts English to Yoda speak using the Yodish
+              API.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://markseven-yoda-speak.netlify.app/"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markSeven"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/minion-speak.png" alt="Minion Speak" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Minion Speak</div>
+            <small>July, 2021 &nbsp; <span class="mark">markSix</span></small>
+
+            <div class="details">
+              A web app which converts English to Minion speak using the Minion
+              Speak API.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://marksix-minion-speak.netlify.app/"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markSix"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/portfolio.png" alt="Portfolio" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Portfolio</div>
+            <small
+              >June, 2021 &nbsp; <span class="mark">markThree</span
+              ><span class="mark">markFour</span
+              ><span class="mark">markFive</span></small
+            >
+
+            <div class="details">
+              Personal portfolio website which includes my projects, blogs and
+              skills.
+            </div>
+            <div class="button-div">
+              <a href="https://himadrishah.tech/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a href="https://github.com/himadri2110/portfolio" target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/india-quiz.png" alt="India Quiz" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Know India?</div>
+            <small>June, 2021 &nbsp; <span class="mark">markTwo</span></small>
+
+            <div class="details">
+              A JavaScript CLI app about India, made using readlineSync and
+              CHALK dependencies.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://replit.com/@himadri21/assignment-lesson-1?embed=1&output=1"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markTwo"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/me-quiz.png" alt="Me Quiz" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Know Me?</div>
+            <small>June, 2021 &nbsp; <span class="mark">markOne</span></small>
+
+            <div class="details">
+              A JavaScript CLI app about me, made using readlineSync and CHALK
+              dependencies.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://replit.com/@himadri21/lesson-1?embed=1&output=1"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/neoG-markOne"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/movie-mania.png" alt="Movie Mania" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">MovieMania</div>
+            <small>June, 2021 &nbsp; <span class="mark">Personal</span></small>
+
+            <div class="details">
+              A Movie App built using data from TMDb API. It can filter movies
+              based on Categorie and Genres, search movies, give list of
+              Trending Shows, watchList feature to save your favorite shows.
+            </div>
+            <div class="button-div">
+              <a href="https://themoviemania.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/MovieMania"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/library.png" alt="Library" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Library</div>
+            <small>June, 2021 &nbsp; <span class="mark">Personal</span></small>
+
+            <div class="details">
+              A web app that lets the user store their favourite books along
+              with its details into a virtual library. Users can mark the book
+              as read and remove it as well.
+            </div>
+            <div class="button-div">
+              <a href="https://himadri-library.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/vanillaJS/tree/main/Library"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/calculator.png" alt="Calculator" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Calculator</div>
+            <small>March, 2021 &nbsp; <span class="mark">Personal</span></small>
+
+            <div class="details">
+              A calculator web app that lets the user perform mathematical
+              calculations such as addition, subtraction, multiplication and
+              division.
+            </div>
+            <div class="button-div">
+              <a href="https://himadri-calculator.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/vanillaJS/tree/main/Calculator"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/to-do-list.png" alt="To Do List" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">To Do List</div>
+            <small>March, 2021 &nbsp; <span class="mark">Personal</span></small>
+
+            <div class="details">
+              A web app that allows the users to enter their To Do Tasks, mark
+              the task as completed, remove task from list. User can also filter
+              completed and pending tasks.
+            </div>
+            <div class="button-div">
+              <a href="https://himadri-todo-list.netlify.app/" target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a
+                href="https://github.com/himadri2110/vanillaJS/tree/main/To%20Do%20List"
+                target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="image">
+            <img src="./img/banking-app.png" alt="Banking App" />
+          </div>
+
+          <div class="project-text">
+            <div class="name">Banking App</div>
+            <small>Feb, 2021 &nbsp; <span class="mark">Internship</span></small>
+
+            <div class="details">
+              A Basic Banking system which allows the customers to carry out
+              transactions and also view the transaction history with timestamp
+              and amount transferred, along with the customer details.
+            </div>
+            <div class="button-div">
+              <a
+                href="https://himadrishah.000webhostapp.com/index.php"
+                target="_blank"
+                ><button>Live<i class="fas fa-external-link-alt"></i></button
+              ></a>
+              <a href="https://github.com/himadri2110/TSF-Bank" target="_blank"
+                ><button class="github">Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="contact-section">
-        <div class="title">Connect with me!</div>
+      <div class="title">Connect with me!</div>
 
-        <div class="contact">
-            <a href="mailto: himadrishah2000@gmail.com" title="Email"><i class="fas fa-envelope-square"></i></a>
-            <a href="https://linkedin.com/in/himadri2110" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/himadri2110" target="_blank" title="GitHub"><i class="fab fa-github-square"></i></a>
-            <a href="https://twitter.com/himadri2110" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-        </div>
+      <div class="contact">
+        <a href="mailto: himadrishah2000@gmail.com" title="Email"
+          ><i class="fas fa-envelope-square"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/himadri2110"
+          target="_blank"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/himadri2110" target="_blank" title="GitHub"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://twitter.com/himadri2110"
+          target="_blank"
+          title="Twitter"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </div>
 
-        <div class="footer">
-            Made with 💚 by <u>Himadri Shah</u>
-        </div>
+      <div class="footer">Made with 💚 by <u>Himadri Shah</u></div>
     </div>
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="./main.js"></script>
-    
-</body>
+  </body>
 </html>
