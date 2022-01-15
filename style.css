@@ -20,6 +20,19 @@
   font-family: var(--poppins);
 }
 
+/* Scroll to Top Button */
+
+.scroll-to-top button {
+  display: none;
+  position: fixed;
+  bottom: 4vh;
+  right: 3vw;
+  color: var(--blue);
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
