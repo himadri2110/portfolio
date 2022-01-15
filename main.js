@@ -41,7 +41,7 @@ function jumpToDiv(div) {
 }
 
 // Scroll to Top Functionality
-const scrollButton = document.querySelector(".scroll-to-top > button");
+const scrollButton = document.querySelector(".scroll-to-top");
 
 // When the user clicks on the button, scroll to the top of the document
 function scrollToTop() {

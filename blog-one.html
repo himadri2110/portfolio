@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="author" content="Himadri Shah">
-    <meta name="description" content="Personal Portfolio of Himadri Shah">
-    <meta name="keywords" content="Portfolio, Web Development">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="author" content="Himadri Shah" />
+    <meta name="description" content="Personal Portfolio of Himadri Shah" />
+    <meta name="keywords" content="Portfolio, Web Development" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Font Awesome Downloaded -->
-    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="all.min.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Build a Movie App using TheMovieDb API</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav>
-        <ul class="nav-links">
-            <li><a onclick="window.location.href='index.html'">Home</a></li>
-            <li><a onclick="window.location.href='about.html'">About</a></li>
-            <li><a onclick="window.location.href='projects.html'">Projects</a></li>
-            <li><a onclick="window.location.href='blogs.html'" style="border-bottom: 2px solid var(--blue);">Blogs</a></li>
-            <!-- <li><a onclick="jumpToDiv('contact')">Contact</a></li> -->
-        </ul>
+      <ul class="nav-links">
+        <li><a onclick="window.location.href='index.html'">Home</a></li>
+        <li><a onclick="window.location.href='about.html'">About</a></li>
+        <li><a onclick="window.location.href='projects.html'">Projects</a></li>
+        <li>
+          <a
+            onclick="window.location.href='blogs.html'"
+            style="border-bottom: 2px solid var(--blue)"
+            >Blogs</a
+          >
+        </li>
+        <!-- <li><a onclick="jumpToDiv('contact')">Contact</a></li> -->
+      </ul>
 
-        <!-- <div class="burger">
+      <!-- <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -41,30 +52,42 @@
     </nav>
 
     <div class="blog-wrapper">
+      <main class="blog-page">
+        <h1>Build a Movie App using TheMovieDb API</h1>
 
-        <main class="blog-page">
+        <img src="./img/netflix.png" class="blog-movie-image" alt="Movie App" />
 
-            <h1>Build a Movie App using TheMovieDb API</h1>
+        <h2>Introduction</h2>
+        The pandemic has made us all stay indoors for most of the day, which is
+        why we need some entertainment activities that can refresh us while
+        continuing to stay indoors. So, I thought of building a Movie App that
+        can give me a list of movies and their details upon searching for it. On
+        digging further, I came across TheMovieDb(TMDb) API which provides
+        information on movies, TV shows, actors, and much more. This API is free
+        to use and integrate into your website.
 
-            <img src="./img/netflix.png" class="blog-movie-image" alt="Movie App">
+        <h2>Get Started</h2>
 
-            <h2>Introduction</h2>
-            The pandemic has made us all stay indoors for most of the day, which is why we need some entertainment activities that can refresh us while continuing to stay indoors. So, I thought of building a Movie App that can give me a list of movies and their details upon searching for it. On digging further, I came across TheMovieDb(TMDb) API which provides information on movies, TV shows, actors, and much more. This API is free to use and integrate into your website.
-    
-            <h2>Get Started</h2>
-                
-                Visit <a href="https://www.themoviedb.org/">TMDb website</a>, sign up for a free account and generate your API key from the Settings tab.
-    
-                Read every section of the <a href="https://developers.themoviedb.org/3/getting-started/introduction">API documentation</a> thoroughly.    
-    
-            <h2>HTML Page Structure</h2>
-                
-                We are going to create a simple movie app, which will give a list of movies, their Poster image, and rating.
-        
-                Here, we have an <code>input</code> field for users to enter their search keywords. The <code>div</code> with class result is used to display the result after making the API call. Also, add the jQuery CDN inside the <code>script</code> tag.
-    
-            <div class="code">
-                <pre>
+        Visit <a href="https://www.themoviedb.org/">TMDb website</a>, sign up
+        for a free account and generate your API key from the Settings tab. Read
+        every section of the
+        <a
+          href="https://developers.themoviedb.org/3/getting-started/introduction"
+          >API documentation</a
+        >
+        thoroughly.
+
+        <h2>HTML Page Structure</h2>
+
+        We are going to create a simple movie app, which will give a list of
+        movies, their Poster image, and rating. Here, we have an
+        <code>input</code> field for users to enter their search keywords. The
+        <code>div</code> with class result is used to display the result after
+        making the API call. Also, add the jQuery CDN inside the
+        <code>script</code> tag.
+
+        <div class="code">
+          <pre>
 &lt;div class="search"&gt;
     &lt;p>Search for a Movie&lt;/p&gt;
 
@@ -77,15 +100,16 @@
 
 &lt;!-- jQuery minified CDN --&gt;
 &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
-                </pre>                    
-            </div>
-    
-            <h2>Apply Styling</h2>
-            
-            Style the search <code>div</code> using CSS
-    
-            <div class="code">
-                <pre>
+                </pre
+          >
+        </div>
+
+        <h2>Apply Styling</h2>
+
+        Style the search <code>div</code> using CSS
+
+        <div class="code">
+          <pre>
 * {
     margin: 0;
     padding: 0;
@@ -119,17 +143,17 @@ form input:focus {
     outline: none;
     border: 1px solid rgb(84, 101, 255);
 }
-                </pre>
-            </div>
-    
-    
-            <h2>Add jQuery</h2>
-    
-            Add jQuery code to call a JavaScript function <code>getMovies</code> when a user submits the input form
-    
-            <div class="code">
-                
-                <pre>
+                </pre
+          >
+        </div>
+
+        <h2>Add jQuery</h2>
+
+        Add jQuery code to call a JavaScript function
+        <code>getMovies</code> when a user submits the input form
+
+        <div class="code">
+          <pre>
 $(document).ready(() => {
     $('#searchForm').on('submit', (e) => {
         e.preventDefault();
@@ -137,15 +161,23 @@ $(document).ready(() => {
         getMovies(searchText);   
     });
 });     
-                </pre>
-            </div>
-        
-            <h2>Making the API Call</h2>
-    
-            In the <code>getMovies()</code> function, we will pass the <code>searchText</code> as a parameter. The variable <code>url</code> is the URL to make the jQuery AJAX API call. If the API call is successful, then the result will be returned in JSON format which will be stored in <code>data</code>. Then we will loop through it to fetch the values that we want and structure them inside a <code>div</code> . If no result is available, then we will display the error statement, as shown in the <code>else</code> block.
-    
-            <div class="code">
-                    <pre>
+                </pre
+          >
+        </div>
+
+        <h2>Making the API Call</h2>
+
+        In the <code>getMovies()</code> function, we will pass the
+        <code>searchText</code> as a parameter. The variable <code>url</code> is
+        the URL to make the jQuery AJAX API call. If the API call is successful,
+        then the result will be returned in JSON format which will be stored in
+        <code>data</code>. Then we will loop through it to fetch the values that
+        we want and structure them inside a <code>div</code> . If no result is
+        available, then we will display the error statement, as shown in the
+        <code>else</code> block.
+
+        <div class="code">
+          <pre>
 const API_KEY = // enter your api key here
 
 let baseURL = 'https://api.themoviedb.org/3/';
@@ -194,16 +226,16 @@ function getMovies(searchText) {
         }
     }); 
 }
-        </pre>
-            </div>
-    
-    
-            <h2>Style the Result of API call</h2>
-    
-            Style the result <code>div</code> and its content.
-    
-            <div class="code">
-                    <pre>
+        </pre
+          >
+        </div>
+
+        <h2>Style the Result of API call</h2>
+
+        Style the result <code>div</code> and its content.
+
+        <div class="code">
+          <pre>
 .result {
     margin: 2rem;
     display: flex;
@@ -256,36 +288,52 @@ function getMovies(searchText) {
     margin: 0 0.5rem;
 }
                         
-                </pre>
-            </div>
-    
-            <h2>Output</h2>
-            
-            We're done!
-    
-            Search for any movie and get the output as shown below. 
-    
-            <img src="./img/blog-moviemania.png" class="blog-movie-image" alt="Movie App">
-    
-        </main>
+                </pre
+          >
+        </div>
 
+        <h2>Output</h2>
+
+        We're done! Search for any movie and get the output as shown below.
+
+        <img
+          src="./img/blog-moviemania.png"
+          class="blog-movie-image"
+          alt="Movie App"
+        />
+      </main>
     </div>
-
 
     <div class="contact-section">
-        <div class="title">Connect with me!</div>
+      <div class="title">Connect with me!</div>
 
-        <div class="contact">
-            <a href="mailto: himadrishah2000@gmail.com" title="Email"><i class="fas fa-envelope-square"></i></a>
-            <a href="https://linkedin.com/in/himadri2110" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/himadri2110" target="_blank" title="GitHub"><i class="fab fa-github-square"></i></a>
-            <a href="https://twitter.com/himadri2110" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a>
-        </div>
+      <div class="contact">
+        <a href="mailto: himadrishah2000@gmail.com" title="Email"
+          ><i class="fas fa-envelope-square"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/himadri2110"
+          target="_blank"
+          title="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/himadri2110" target="_blank" title="GitHub"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://twitter.com/himadri2110"
+          target="_blank"
+          title="Twitter"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </div>
 
-        <div class="footer">
-            Made with 💚 by <u>Himadri Shah</u>
-        </div>
+      <div class="footer">Made with 💚 by <u>Himadri Shah</u></div>
     </div>
 
-</body>
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top">
+      <i class="fas fa-chevron-circle-up" onclick="scrollToTop()"></i>
+    </div>
+  </body>
 </html>

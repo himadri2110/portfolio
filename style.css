@@ -22,14 +22,15 @@
 
 /* Scroll to Top Button */
 
-.scroll-to-top button {
+.scroll-to-top {
   display: none;
   position: fixed;
   bottom: 4vh;
   right: 3vw;
   color: var(--blue);
+  /* box-shadow: var(--box-shadow); */
   margin: 0.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
